@@ -79,6 +79,7 @@ body {
   background-color: rgb(102, 50, 50);
   border-radius: 2px;
   font-size: x-large;
+  font-weight:bolder;
 }
 #p1{
   background-color: rgb(48, 36, 36);
@@ -86,4 +87,5 @@ body {
 
   border-radius: 2px;
   font-size: large;
+  font-weight:bolder;
 }
