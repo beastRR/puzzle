@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 90vh;
+  background-color: rgb(66, 66, 66);
+  
+}
+
+.gameContainer {
+  width: 500px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.card {
+  width: 23%;
+  height: 23%;
+  margin: 5px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.card:active {
+  transform: scale(0.95);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.front,
+.back {
+  background-color: #807f7f;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.timer{
+  background-color: none;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  right: 0%;
+  bottom: 0%;
+  margin-top: 3rem;
+  
+  color: limegreen;
+  border: 2px solid none;
+}
+.counter{
+  border-radius: 5px;
+}
+#p{
+  display:inline-flex;
+  padding: 2px;
+  background-color: rgb(102, 50, 50);
+  border-radius: 2px;
+  font-size: x-large;
+}
+#p1{
+  background-color: rgb(48, 36, 36);
+  padding: 2px;
+
+  border-radius: 2px;
+  font-size: large;
+}
